@@ -70,11 +70,11 @@ I learned how to follow TCP, UDP and HTTP streams to reconstruct application-lev
 
 This can help analysts investigate information such as:
 
-HTTP requests and responses
-User activity
-Transferred data
-Clear-text credentials
-Suspicious communications
+- HTTP requests and responses
+- User activity
+- Transferred data
+- Clear-text credentials
+- Suspicious communications
 
 ### 6. Exporting Objects
 
@@ -88,10 +88,10 @@ I learned that Wireshark provides Expert Information to highlight possible proto
 
 The severity categories include:
 
-Chat
-Note
-Warn
-Error
+- Chat
+- Note
+- Warn
+- Error
 
 Expert Information is useful for identifying potential anomalies, although it should be treated as an investigative aid rather than definitive proof of malicious activity.
 
@@ -99,15 +99,15 @@ Expert Information is useful for identifying potential anomalies, although it sh
 
 During this room, I practised:
 
-Opening PCAP files
-Navigating packet captures
-Inspecting packet layers
-Identifying network protocols
-Filtering traffic
-Following network streams
-Extracting objects
-Investigating packet metadata
-Using Expert Information
+- Opening PCAP files
+- Navigating packet captures
+- Inspecting packet layers
+- Identifying network protocols
+- Filtering traffic
+- Following network streams
+- Extracting objects
+- Investigating packet metadata
+- Using Expert Information
 
 ## Security Relevance
 
