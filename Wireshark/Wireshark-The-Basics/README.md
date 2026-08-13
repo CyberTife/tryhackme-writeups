@@ -75,13 +75,14 @@ User activity
 Transferred data
 Clear-text credentials
 Suspicious communications
-6. Exporting Objects
+
+### 6. Exporting Objects
 
 Wireshark can extract files transferred through supported protocols.
 
 This is useful during network investigations because analysts can extract suspicious files and investigate them separately.
 
-7. Expert Information
+### 7. Expert Information
 
 I learned that Wireshark provides Expert Information to highlight possible protocol problems and unusual events.
 
