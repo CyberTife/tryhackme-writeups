@@ -142,4 +142,4 @@ SOC Analysis
 
 ## Completion Evidence
 
-![TryHackMe Wireshark Traffic Analysis Completion](wireshark-traffic-analysis-completion.png)
+![TryHackMe Wireshark Traffic Analysis Completion](network-traffic-analysis.png)
