@@ -16,9 +16,18 @@ This repository documents my hands-on cybersecurity learning journey through Try
 ## 📚 Learning Paths
 
 ### Pre Security
-- [ ] Offensive Security Intro
-- [ ] Defensive Security Intro
-- [ ] Search Skills
+
+- [x] Offensive Security Intro
+- [x] Defensive Security Intro
+- [x] Search Skills
+
+### Wireshark & Network Analysis
+
+- [x] [Network Traffic Basics](./Wireshark/Network-Traffic-Basics/)
+- [x] [Wireshark: The Basics](./Wireshark/Wireshark-The-Basics/)
+- [x] [Wireshark: Packet Operations](./Wireshark/Wireshark-Packet-Operations/)
+- [x] [Wireshark: Traffic Analysis](./Wireshark/Network-Traffic-Analysis/)
+- [x] [NetworkMiner](./Wireshark/NetworkMiner/)
 
 ### Linux Fundamentals
 - [ ] Coming Soon
@@ -40,26 +49,33 @@ This repository documents my hands-on cybersecurity learning journey through Try
 tryhackme-writeups
 │
 ├── Pre-Security
+├── Wireshark
+│   ├── Network-Traffic-Basics
+│   ├── Wireshark-The-Basics
+│   ├── Wireshark-Packet-Operations
+│   ├── Network-Traffic-Analysis
+│   └── NetworkMiner
 ├── Linux-Fundamentals
 ├── Windows-Fundamentals
 ├── SOC-Level-1
-├── Cyber-Defence
-└── Images
+└── Cyber-Defence
 ```
 
 ---
-
-## 🛠️ Skills I'm Building
-
-- Linux
-- Networking
-- Web Security
-- Threat Intelligence
-- SIEM
-- Log Analysis
-- Incident Response
-- OSINT
-- Vulnerability Assessment
+🛠️ Skills I'm Building
+Linux
+Networking
+Web Security
+Threat Intelligence
+SIEM
+Log Analysis
+Incident Response
+OSINT
+Vulnerability Assessment
+Wireshark
+Network Traffic Analysis
+Packet Analysis
+Network Forensics
 
 ---
 
