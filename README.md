@@ -17,17 +17,17 @@ This repository documents my hands-on cybersecurity learning journey through Try
 
 ### Pre Security
 
-- [x] Offensive Security Intro
-- [x] Defensive Security Intro
-- [x] Search Skills
-
+- [x] [Offensive Security Intro](https://github.com/CyberTife/tryhackme-writeups/tree/main/Pre-Security/Offensive-Security-Intro)
+- [x] [Defensive Security Intro](https://github.com/CyberTife/tryhackme-writeups/tree/main/Pre-Security/Defensive-Security-Intro)
+- [x] [Search Skills](https://github.com/CyberTife/tryhackme-writeups/tree/main/Pre-Security/Search-Skills)
+      
 ### Wireshark & Network Analysis
 
-- [x] [Network Traffic Basics](./Wireshark/Network-Traffic-Basics/)
-- [x] [Wireshark: The Basics](./Wireshark/Wireshark-The-Basics/)
-- [x] [Wireshark: Packet Operations](./Wireshark/Wireshark-Packet-Operations/)
-- [x] [Wireshark: Traffic Analysis](./Wireshark/Network-Traffic-Analysis/)
-- [x] [NetworkMiner](./Wireshark/NetworkMiner/)
+- [x] [Network Traffic Basics](https://github.com/CyberTife/tryhackme-writeups/tree/main/Wireshark/Network-Traffic-Basics)
+- [x] [Wireshark: The Basics](https://github.com/CyberTife/tryhackme-writeups/tree/main/Wireshark/Wireshark-The-Basics)
+- [x] [Wireshark: Packet Operations](https://github.com/CyberTife/tryhackme-writeups/tree/main/Wireshark/Wireshark-Packet-Operations)
+- [x] [Wireshark: Traffic Analysis](https://github.com/CyberTife/tryhackme-writeups/tree/main/Wireshark/Network-Traffic-Analysis)
+- [x] [NetworkMiner](https://github.com/CyberTife/tryhackme-writeups/tree/main/Wireshark/NetworkMiner)
 
 ### Linux Fundamentals
 - [ ] Coming Soon
