@@ -95,7 +95,7 @@ Error
 
 Expert Information is useful for identifying potential anomalies, although it should be treated as an investigative aid rather than definitive proof of malicious activity.
 
-Practical Skills
+## Practical Skills
 
 During this room, I practised:
 
@@ -108,26 +108,27 @@ Following network streams
 Extracting objects
 Investigating packet metadata
 Using Expert Information
-Security Relevance
+
+## Security Relevance
 
 Packet analysis is an important skill for a SOC analyst.
 
 Wireshark can help analysts investigate suspicious network behaviour, identify unusual communications, inspect protocols and understand what happened during a security event.
 
-Key Takeaways
+## Key Takeaways
 
 The main lesson from this room was that effective packet analysis requires understanding both the network protocols and the information contained within individual packets.
 
 Wireshark provides the visibility needed to move from a high-level view of network traffic to detailed packet-level investigation.
 
-Completion
+## Completion
 
 I completed the Wireshark: The Basics room on TryHackMe.
 
-Platform
+## Platform
 
 TryHackMe
 
-Skills Practised
+## Skills Practised
 
 Wireshark PCAP Analysis Packet Analysis Network Forensics TCP/IP HTTP DNS Display Filters
