@@ -1,127 +1,101 @@
-# Wireshark: Traffic Analysis
+# Network Traffic Basics
 
 ## Overview
 
-This TryHackMe room focused on analysing network traffic using Wireshark.
+This TryHackMe room introduced the fundamentals of network traffic and how data is communicated across a network.
 
-The room built on the knowledge gained from previous Wireshark rooms and focused on using packet captures to investigate network activity, identify suspicious traffic, and understand what happened during a network investigation.
+The room provided an understanding of how network communication works and introduced important concepts that are useful when analysing network traffic and investigating security events.
 
 ## Learning Objectives
 
-- Analyse network traffic using Wireshark
-- Investigate captured network packets
-- Identify suspicious network activity
-- Use Wireshark filters during investigations
-- Analyse different network protocols
-- Follow network communications and streams
-- Investigate network traffic from a security perspective
+- Understand the basics of network traffic
+- Learn how network communication works
+- Understand packets and network protocols
+- Learn about common network traffic concepts
+- Understand how network traffic can be analysed
+- Build a foundation for network traffic analysis
 
 ## What I Learned
 
-### 1. Network Traffic Analysis
+### 1. Network Traffic
 
-I learned how to analyse captured network traffic using Wireshark.
+I learned that network traffic refers to the data being transmitted between devices across a network.
 
-Network traffic analysis involves examining packets exchanged between systems to understand communication patterns, protocols, hosts, ports, and other network activity.
+Network communication involves devices sending and receiving packets containing information required for communication.
 
-This can help security analysts identify unusual or suspicious behaviour.
+Understanding network traffic is important for identifying how systems communicate and recognising unusual activity.
 
-### 2. Investigating Packet Captures
+### 2. Packets
 
-I learned how to investigate PCAP files and examine the packets contained within them.
+I learned that network data is divided into smaller units called packets.
 
-During an investigation, I can examine information such as:
+Packets contain information that helps deliver data between devices.
 
-- Source IP address
-- Destination IP address
+When analysing network traffic, useful information can include:
+
+- Source address
+- Destination address
+- Protocol
 - Source port
 - Destination port
-- Protocol
 - Packet information
-- Timestamps
-- Network conversations
 
-### 3. Using Display Filters
+### 3. Network Protocols
 
-I practised using Wireshark display filters to narrow down network traffic.
+I learned that protocols define how devices communicate across a network.
 
-Filters make it easier to focus on specific traffic instead of manually examining every packet.
+Different protocols are responsible for different types of network communication.
 
-Examples of traffic that can be investigated include:
+Understanding protocols is important because security analysts often need to identify which protocols are being used when investigating network traffic.
 
-- HTTP traffic
-- DNS traffic
-- TCP traffic
-- UDP traffic
-- ICMP traffic
-- Traffic from specific IP addresses
-- Traffic using specific ports
+### 4. TCP/IP
 
-### 4. Protocol Analysis
+I learned about the TCP/IP model and how network communication can be understood through different layers.
 
-I learned how different protocols can provide useful information during a network investigation.
+Understanding the different layers helps an analyst identify where specific network information belongs and how communication moves through a network.
 
-Analysing protocols can help an analyst understand how systems are communicating and identify unusual or unexpected network behaviour.
+### 5. Network Traffic Analysis
 
-### 5. Following Network Traffic
+I learned that analysing network traffic can help security professionals understand communication between systems.
 
-I learned how to follow network communications to understand the conversation between systems.
+Network traffic analysis can provide useful information about:
 
-Following a stream can help reconstruct communication and provide additional context about what occurred during a network session.
+- Communicating hosts
+- Network protocols
+- Ports
+- Connections
+- Data being transferred
 
-This can be useful when investigating:
-
-- Web requests
-- Network communications
-- User activity
-- Suspicious connections
-- Transferred information
-
-### 6. Identifying Suspicious Activity
-
-I learned that network traffic can contain indicators that may require further investigation.
-
-Examples include:
-
-- Unexpected connections
-- Unusual ports
-- Suspicious IP addresses
-- Abnormal network behaviour
-- Unusual protocol usage
-- Suspicious communications
-
-Network traffic analysis can therefore help an analyst identify potential indicators of compromise.
+This information can be useful when investigating suspicious activity.
 
 ## Practical Skills
 
 During this room, I practised:
 
-- Analysing PCAP files
-- Inspecting network packets
-- Using Wireshark display filters
-- Analysing network protocols
-- Investigating IP addresses and ports
-- Following network streams
-- Identifying suspicious network activity
-- Interpreting network traffic
+- Understanding network traffic
+- Identifying network packets
+- Understanding network protocols
+- Understanding TCP/IP concepts
+- Identifying network communication
+- Building a foundation for network traffic analysis
 
 ## Security Relevance
 
-Network traffic analysis is an important skill for a SOC analyst.
+Understanding network traffic is an important foundation for a SOC analyst.
 
-When investigating a security alert or potential incident, analysts may need to examine network traffic to determine what systems communicated, which protocols were used, and whether the activity was suspicious.
+Security analysts may need to investigate network communications when responding to alerts or security incidents.
 
-Wireshark provides detailed visibility into network communications and can help analysts move from a security alert to a better understanding of what happened.
+Having a good understanding of packets, protocols, ports, and network communication makes it easier to investigate suspicious traffic using tools such as Wireshark and NetworkMiner.
 
 ## Key Takeaways
 
-The main lesson from this room was that network traffic contains valuable information that can help security analysts understand and investigate security incidents.
+The main lesson from this room was that understanding how network communication works is essential before performing deeper network traffic analysis.
 
-By combining packet inspection, display filters, protocol analysis, and stream analysis, an analyst can efficiently investigate captured network traffic and identify activity that requires further investigation.
+Understanding packets, protocols, ports, and the TCP/IP model provides the foundation required to investigate network activity effectively.
 
 ## Completion
 
-I completed the Wireshark: Traffic Analysis room on TryHackMe.
+I completed the Network Traffic Basics room on TryHackMe.
 
 ## Platform
 
@@ -129,17 +103,14 @@ TryHackMe
 
 ## Skills Practised
 
-Wireshark  
-Network Traffic Analysis  
-PCAP Analysis  
+Network Traffic  
+Network Fundamentals  
 Packet Analysis  
-Network Forensics  
-Protocol Analysis  
-Display Filters  
+Network Protocols  
 TCP/IP  
-Security Monitoring  
-SOC Analysis
+Network Communication  
+Network Security
 
 ## Completion Evidence
 
-![TryHackMe Wireshark Traffic Analysis Completion](network-traffic-analysis.png)
+![TryHackMe Network Traffic Basics Completion](network-traffic-basics.png)
