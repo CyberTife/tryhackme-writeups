@@ -125,6 +125,8 @@ Wireshark provides the visibility needed to move from a high-level view of netwo
 
 I completed the Wireshark: The Basics room on TryHackMe.
 
+![TryHackMe Wireshark Completion](wireshark-basics-completion.png)
+
 ## Platform
 
 TryHackMe
