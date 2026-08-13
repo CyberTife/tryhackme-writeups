@@ -63,8 +63,8 @@ tcp.port == 80
 ip.addr == 10.10.10.111
 http.request.method == "GET"
 dns
-
-5. Following Network Streams
+```
+### 5. Following Network Streams
 
 I learned how to follow TCP, UDP and HTTP streams to reconstruct application-level communication.
 
