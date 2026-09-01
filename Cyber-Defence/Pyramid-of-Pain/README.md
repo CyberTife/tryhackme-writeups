@@ -36,20 +36,9 @@ The higher an indicator is on the pyramid, the more difficult it generally is fo
 
 The progression from lower to higher levels is:
 
-```text
-TTPs
-  ↑
-Tools
-  ↑
-Network Artifacts
-  ↑
-Host Artifacts
-  ↑
-Domain Names
-  ↑
-IP Addresses
-  ↑
-Hash Values
+**Hash Values → IP Addresses → Domain Names → Host Artifacts → Network Artifacts → Tools → TTPs**
+
+The higher we move up the pyramid, the more difficult and costly it generally becomes for an attacker to change their behaviour or methods.
 
 ---
 
@@ -57,75 +46,56 @@ Hash Values
 
 During this room, I learned about different indicators and techniques that can be used to detect and investigate attacker activity.
 
-Key concepts covered include:
+Some of the concepts covered include:
 
-- File hash analysis
-- IP address investigation
-- Malicious domain detection
-- Punycode
-- Fast Flux
-- URL shorteners
+- Hash analysis
+- IP address analysis
+- Domain analysis
 - Host artifacts
 - Network artifacts
-- Command-and-Control (C2) activity
-- Tactics, Techniques, and Procedures (TTPs)
-
-I also learned that tools such as **Wireshark, TShark, and Snort** can be used to investigate network artifacts and suspicious network communication.
+- Tools
+- Tactics, Techniques and Procedures (TTPs)
 
 ---
 
 ## 🧠 What I Learned
 
-This room helped me understand that not all Indicators of Compromise are equally difficult for attackers to change.
+I learned that the **Pyramid of Pain** helps defenders understand which indicators are easier or harder for attackers to change.
 
-I learned that **hashes are relatively easy for attackers to change** because modifying a file can result in a completely different hash. IP addresses and domain names can also be changed when attackers modify their infrastructure.
+I learned that **hashes** are useful for identifying known malicious files, but attackers can modify a file and generate a different hash.
 
-As we move higher up the Pyramid of Pain, the indicators become more difficult for attackers to change. **Host artifacts, network artifacts, tools, and TTPs provide more information about attacker behaviour and can make it more difficult for attackers to evade detection.**
+I learned that **IP addresses** can be used to identify malicious infrastructure, but attackers can change IP addresses or use techniques such as **Fast Flux**.
 
-I also learned that SOC Analysts should not depend on a single IOC. Combining different indicators can provide stronger evidence during an investigation and help analysts understand the broader activity taking place on a system or network.
+I learned that **domain names** can be used as indicators of malicious activity and that attackers may use techniques such as **Punycode** and URL shorteners to make malicious links harder to identify.
 
-Another important lesson was the value of **behaviour-based detection**. Instead of only looking for known malicious hashes, IP addresses, or domains, defenders can investigate patterns of behaviour associated with attackers.
+I learned that **host artifacts** provide evidence of activity on a compromised system, including suspicious processes, files, and registry changes.
 
----
+I also learned about **network artifacts**, including unusual User-Agent strings, URI patterns, HTTP requests, and Command-and-Control (C2) information.
 
-## 🔎 SOC Analyst Relevance
-
-The Pyramid of Pain is useful to SOC Analysts because it helps them understand the different types of indicators that can be used during detection and investigation.
-
-For example:
-
-- **Hash values** can help identify known malicious files.
-- **IP addresses** can help identify suspicious network connections.
-- **Domain names** can help identify malicious infrastructure.
-- **Host artifacts** can reveal activity that occurred on a compromised system.
-- **Network artifacts** can reveal suspicious communication patterns.
-- **Tools** can help identify software used by an attacker.
-- **TTPs** can reveal the attacker's behaviour and methods.
-
-Understanding these indicators can help a SOC Analyst move beyond simply identifying an IOC and investigate the wider behaviour of an attacker.
+The room helped me understand that higher-level indicators such as **Tools and TTPs** can be more valuable for detection because they are generally more difficult for attackers to change.
 
 ---
 
-## 💡 Key Takeaway
+## 🎯 SOC Analyst Takeaway
 
-The main lesson I took from this room is that **the higher an indicator is on the Pyramid of Pain, the more difficult and costly it becomes for an attacker to change it.**
+As a SOC Analyst, I should not rely on a single Indicator of Compromise.
 
-As a SOC Analyst, I should therefore look beyond simple indicators such as hashes and IP addresses and investigate **host artifacts, network artifacts, tools, and attacker TTPs** to build a stronger understanding of an incident.
+Instead, I can correlate different indicators such as:
+
+**Hash → IP → Domain → Host Artifact → Network Artifact → Tools → TTPs**
+
+This provides more context during an investigation and can make it more difficult for attackers to evade detection.
 
 ---
 
-## 📚 Room Information
+## 📚 Key Takeaway
 
-**TryHackMe Room:** The Pyramid of Pain
+The main lesson I took from this room is that **effective detection goes beyond identifying individual malicious files or IP addresses.**
 
-**Module:** Cyber Defence Frameworks
-
-**Focus:** Indicators of Compromise, Threat Detection, and Attacker Behaviour
+Understanding attacker behaviour, tools, and TTPs can provide stronger and more resilient detection capabilities.
 
 ---
 
 ## ⚠️ Disclaimer
 
-This write-up documents my personal learning experience while completing the TryHackMe room.
-
-It is intended for educational and portfolio purposes and does not include protected challenge flags or restricted walkthrough solutions.
+This write-up documents my personal learning experience from the TryHackMe room. It is intended for educational and portfolio purposes and does not include protected challenge flags or prohibited challenge answers.
