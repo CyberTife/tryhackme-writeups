@@ -8,6 +8,8 @@ It provides a common language for cybersecurity professionals to understand, inv
 
 As a SOC Analyst, understanding MITRE ATT&CK helps me identify what an attacker is trying to accomplish, how they are carrying it out, and where evidence of their activity may appear in an environment.
 
+![MITRE ATT&CK Framework](./mitre.png)
+
 ---
 
 ## 🎯 Objectives
