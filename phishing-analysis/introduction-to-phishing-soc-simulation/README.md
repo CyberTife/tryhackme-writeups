@@ -4,26 +4,27 @@
 
 As part of my **Cyber Skills Bridge Internship Program**, I completed the **Introduction to Phishing SOC Simulation** on TryHackMe.
 
-This practical exercise simulated a Security Operations Center (SOC) environment where I investigated multiple security alerts and identified genuine threats hidden among false-positive alerts.
+This practical exercise simulated a **Security Operations Center (SOC)** environment where I investigated multiple security alerts and identified genuine phishing and other malicious activity hidden among false-positive alerts.
 
-Using the **TryHackMe SOC Simulator and Splunk**, I practiced alert triage, phishing investigation, security event analysis, true-positive and false-positive classification, and incident reporting.
+Using the **TryHackMe SOC Simulator** and **Splunk**, I practiced alert triage, phishing investigation, security event analysis, true-positive and false-positive classification, and incident reporting.
 
 ---
 
 ## 🎯 Goal of the Task
 
-The goal of this task was to investigate a simulated security environment and correctly identify malicious activity while filtering out false-positive alerts.
+The goal of this task was to develop practical SOC Analyst skills by investigating security alerts and correctly determining whether each alert represented a genuine security threat or a benign event.
 
-The exercise was designed to develop practical SOC Analyst skills, including:
+The exercise focused on:
 
 - Security alert triage
 - Phishing investigation
-- SIEM analysis
-- True-positive identification
-- False-positive identification
-- Incident investigation
 - Security event analysis
+- Identifying true positives
+- Identifying false positives
+- Incident investigation
 - Incident reporting
+- Reducing false-positive noise
+- Making accurate security classifications
 
 ---
 
@@ -31,195 +32,180 @@ The exercise was designed to develop practical SOC Analyst skills, including:
 
 | Tool | Purpose |
 |------|---------|
-| **TryHackMe SOC Simulator** | Simulated a SOC environment containing security alerts that required investigation and classification |
-| **Splunk** | Used to search and analyze security events during the investigation |
-| **Incident Reporting** | Used to document investigation findings and communicate the outcome |
+| **TryHackMe SOC Simulator** | Simulated SOC environment for investigating and responding to security alerts |
+| **Splunk** | Security information and event analysis |
+| **Web/Email Investigation** | Analysis of phishing-related indicators and suspicious activity |
 
 ---
 
 ## 🔍 Investigation Process
 
-### 1. Alert Triage
+The investigation involved reviewing a number of security alerts presented within the SOC simulation.
 
-I began by reviewing the alerts presented in the SOC simulation.
+For each alert, I:
 
-The environment contained a mixture of **true-positive and false-positive alerts**, requiring me to investigate the alerts before making a classification.
+1. Reviewed the alert details and severity.
+2. Examined the alert type and available security information.
+3. Investigated the activity using the available SOC simulation data and Splunk.
+4. Determined whether the alert represented malicious or benign activity.
+5. Classified the alert as either a **True Positive** or **False Positive**.
+6. Documented the investigation and resolution.
+7. Repeated the process until all relevant alerts were investigated.
 
-The objective was to determine which alerts represented genuine security incidents and which were benign.
-
----
-
-### 2. Phishing Alert Investigation
-
-A major part of the investigation involved phishing-related alerts, including:
-
-> **Inbound Email Containing Suspicious External Link**
-
-I examined the available information associated with the alerts to determine whether the activity should be classified as malicious or benign.
-
-This required analyzing the available phishing indicators and considering the context surrounding the suspicious activity.
+The main challenge was identifying the genuine threats while filtering out benign activity and avoiding unnecessary escalation.
 
 ---
 
-### 3. Splunk Investigation
+## 🚨 True Positive Identification
 
-I used **Splunk** to investigate relevant security events and gather supporting information.
+I successfully identified all the alerts that represented genuine malicious activity.
 
-The investigation involved searching through available events, examining relevant activity, and using the available evidence to support my alert classifications.
+The confirmed true-positive alerts included:
 
-This provided practical experience with using a SIEM to investigate security events and assist with alert triage.
+| Alert ID | Alert Rule | Severity | Type | Classification |
+|---------:|------------|----------|------|----------------|
+| **8815** | Inbound Email Containing Suspicious External Link | Medium | Phishing | Correct |
+| **8816** | Access to Blacklisted External URL Blocked by Firewall | High | Firewall | Correct |
+| **8817** | Inbound Email Containing Suspicious External Link | Medium | Phishing | Correct |
 
----
+These alerts contained indicators consistent with malicious or suspicious activity and were correctly classified during the investigation.
 
-### 4. Alert Classification
+### 📸 True Positive Results
 
-After investigating the alerts, I classified them as either:
-
-- **True Positive** – an alert correctly identified as representing malicious or suspicious activity.
-- **False Positive** – an alert correctly identified as benign activity.
-
-The SOC Simulator provided feedback on my classifications and allowed me to evaluate the accuracy of my investigation.
-
----
-
-## 🚨 True Positive Alerts
-
-I correctly identified **three true-positive alerts**.
-
-| ID | Alert Rule | Severity | Type | Classification |
-|----|------------|----------|------|----------------|
-| 8815 | Inbound Email Containing Suspicious External Link | Medium | Phishing | ✅ Correct |
-| 8816 | Access to Blacklisted External URL Blocked by Firewall | High | Firewall | ✅ Correct |
-| 8817 | Inbound Email Containing Suspicious External Link | Medium | Phishing | ✅ Correct |
-
-### Key Observation
-
-The investigation highlighted how suspicious external links in inbound emails can be an important indicator when investigating potential phishing activity.
-
-It also reinforced the importance of examining the context and available evidence surrounding an alert rather than relying only on the alert title or severity.
+![True Positives](true-positives.png)
 
 ---
 
-## ⚠️ False Positive Alert
+## ⚠️ False Positive Identification
 
-I correctly identified one false-positive alert.
+During the simulation, I also identified a benign alert that initially appeared suspicious.
 
-| ID | Alert Rule | Severity | Type | Classification |
-|----|------------|----------|------|----------------|
-| 8818 | Inbound Email Containing Suspicious External Link | Medium | Phishing | ✅ Correct |
+| Alert ID | Alert Rule | Severity | Type | Classification |
+|---------:|------------|----------|------|----------------|
+| **8818** | Inbound Email Containing Suspicious External Link | Medium | Phishing | Correctly classified as False Positive |
 
-This demonstrated the importance of validating alerts before escalating them as confirmed security incidents.
+This demonstrated the importance of investigating the available evidence before escalating an alert. Not every suspicious-looking alert represents a confirmed security incident.
 
-Correctly identifying false positives is important in SOC operations because unnecessary escalation can contribute to alert fatigue and consume valuable investigation time.
+### 📸 False Positive Results
+
+![False Positives](false-positives.png)
 
 ---
 
-## 📊 Results & Performance
+## 📝 Incident Reporting
 
-The simulation was successfully completed with the following results:
+As part of the investigation, I practiced documenting security incidents and recording important details about the alerts.
+
+The reporting process involved identifying relevant information such as:
+
+- Alert type
+- Alert severity
+- Classification
+- Indicators associated with the activity
+- Investigation findings
+- Time taken to resolve the alert
+- Final disposition of the alert
+
+This helped reinforce the importance of clear and consistent documentation in a SOC environment.
+
+---
+
+## 📊 Performance Metrics
+
+The completed simulation produced the following results:
 
 | Metric | Result |
 |--------|--------|
-| True Positive Identification Rate | **100%** |
-| False Positive Identification Rate | **100%** |
-| Alerts Closed | **4 alerts** |
-| Mean Time to Resolve | **24 minutes** |
-| Mean Dwell Time | **98 minutes** |
-| Scenario Result | **Security breach prevented** |
+| **True Positive Identification Rate** | 100% |
+| **False Positive Identification Rate** | 100% |
+| **Closed Alerts** | 4 |
+| **Mean Time to Resolve (MTTR)** | 24 minutes |
+| **Mean Dwell Time** | 98 minutes |
+| **Final Score** | 176 points |
 
-The simulation confirmed that I successfully identified all the true-positive alerts and correctly classified the false-positive alert.
+The simulation feedback indicated that all true-positive alerts were successfully identified and the false-positive alert was also correctly classified.
 
----
+### 📸 Performance Metrics
 
-## 📸 Evidence
-
-### 1. Scenario Completion
-
-![Scenario Completed](screenshots/scenario-completed.png)
-
-The simulation confirmed that the scenario was successfully completed and the security breach was prevented.
+![Performance Metrics](performance-metrics.png)
 
 ---
 
-### 2. True Positive Identification
+## 🏆 Scenario Completion
 
-![True Positives](screenshots/true-positives.png)
+I successfully completed the SOC simulation and correctly identified all true-positive alerts as well as the false-positive alert.
 
-The simulation recorded a **100% true-positive identification rate**.
+The simulation provided practical experience in working through a SOC alert queue and making classification decisions based on available evidence.
 
----
+### 📸 Completion Screenshot
 
-### 3. False Positive Identification
-
-![False Positives](screenshots/false-positives.png)
-
-The simulation recorded a **100% false-positive identification rate**.
+![Scenario Completed](scenario-completed.png)
 
 ---
 
-### 4. Performance Metrics
+## 💡 Key Findings
 
-![Performance Metrics](screenshots/performance-metrics.png)
+The exercise demonstrated several important aspects of SOC operations:
 
-The final performance metrics showed:
-
-- **4 alerts closed**
-- **24 minutes mean time to resolve**
-- **98 minutes mean dwell time**
+- Phishing alerts require careful investigation rather than immediate escalation.
+- Suspicious external links can be important indicators of phishing activity.
+- Firewall alerts can provide useful evidence when malicious URLs are blocked.
+- Security analysts must distinguish between genuine threats and false positives.
+- Accurate incident classification is important for effective SOC operations.
+- Proper documentation makes security investigations easier to understand and review.
+- Speed is important during alert triage, but accuracy must not be sacrificed.
 
 ---
 
-## 🧠 What I Learned
+## 📚 What I Learned
 
-This exercise strengthened my understanding of how SOC Analysts investigate and triage security alerts.
+This simulation helped me understand how SOC Analysts investigate and respond to security alerts in a practical environment.
 
 I learned how to:
 
-- Analyze and triage security alerts.
-- Distinguish true positives from false positives.
-- Investigate phishing-related activity.
-- Use Splunk for security event analysis.
-- Identify phishing-related indicators.
-- Validate suspicious activity using available evidence.
-- Prioritize alerts during an investigation.
-- Document investigation findings professionally.
+- Perform basic alert triage.
+- Investigate phishing-related alerts.
+- Analyze security events using Splunk.
+- Identify indicators of potentially malicious activity.
+- Differentiate true positives from false positives.
+- Document investigation findings.
+- Prioritize alerts based on severity and available evidence.
+- Understand the importance of Mean Time to Resolve (MTTR).
+- Improve my approach to phishing investigations.
 
-One of my biggest takeaways was that **SOC analysis is not simply about detecting suspicious activity**. A SOC Analyst must validate alerts, investigate available evidence, distinguish malicious activity from legitimate behavior, and document the investigation accurately.
+One important lesson from the simulation was that **not every security alert is a confirmed threat**. A SOC Analyst must investigate the available evidence, validate the activity, and make an informed classification before taking further action.
 
 ---
 
-## 👨‍💻 SOC Analyst Skills Practiced
+## 🎓 SOC Analyst Skills Practiced
 
-This exercise provided hands-on practice in:
+This lab strengthened my practical experience in:
 
 - 🔎 Alert Triage
 - 🎣 Phishing Analysis
-- 🛡️ Security Operations
-- 📊 SIEM Analysis
-- 🔍 Splunk Investigation
+- 📊 Log Analysis
+- 🛡️ Security Monitoring
 - 🚨 Incident Investigation
 - ✅ True Positive Identification
 - ⚠️ False Positive Identification
 - 📝 Incident Reporting
-- 🧠 Evidence-Based Analysis
+- ⏱️ Alert Resolution
+- 🔍 Security Event Analysis
 
 ---
 
-## 🎯 Key Takeaway
+## 📌 Conclusion
 
-The simulation gave me practical experience working through a SOC alert queue and making investigation decisions based on available evidence.
+The **Introduction to Phishing SOC Simulation** provided hands-on experience with a simulated Security Operations Center workflow.
 
-It reinforced the importance of **accurate alert classification, efficient investigation, SIEM analysis, and clear incident documentation** in Security Operations.
+By investigating four alerts, correctly identifying the malicious activity, classifying the false positive, and documenting the findings, I strengthened my understanding of practical SOC Analyst responsibilities.
+
+This exercise also reinforced the importance of **accuracy, evidence-based investigation, effective documentation, and timely alert resolution** in security operations.
 
 ---
 
-## 📌 Lab Information
+## 🔗 Lab Platform
 
-| Information | Details |
-|-------------|---------|
-| **Platform** | TryHackMe |
-| **Pathway** | SOC 1 |
-| **Room** | Introduction to Phishing |
-| **Environment** | SOC Simulator + Splunk |
-| **Program** | Cyber Skills Bridge Internship Program |
-| **Status** | ✅ Completed |
+**TryHackMe:** Introduction to Phishing / SOC Simulation
+
+> This write-up documents my practical learning experience and investigation process from the SOC simulation completed as part of my Cyber Skills Bridge Internship Program.
