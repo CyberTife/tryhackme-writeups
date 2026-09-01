@@ -46,6 +46,10 @@ investigation and incident response.
 Effective phishing investigation requires combining multiple pieces
 of evidence rather than relying on a single indicator.
 
+## 📸 Room Completion
+
+![Phishing Analysis Tools](phishing-analysis-tools.png)
+
 ## ✅ Status
 
 **Completed — 100%**
