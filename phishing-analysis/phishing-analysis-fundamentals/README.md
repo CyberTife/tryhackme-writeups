@@ -129,11 +129,11 @@ A SOC Analyst needs to examine the technical and contextual evidence
 within the email and use multiple indicators to determine whether
 the message is legitimate or malicious.
 
+---
+
 ## 📸 Room Completion
 
-The room was completed successfully.
-
-![Phishing Analysis Fundamentals - Completed](./screenshots/room-completed.png)
+![Phishing Analysis Fundamentals](phishing-analysis-fundamentals.png)
 
 ## ✅ Status
 
