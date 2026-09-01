@@ -113,7 +113,7 @@ preventive controls.
 
 ## 📸 Room Completion
 
-The room was completed successfully.
+![Phishing Prevention](phishing-prevention.png)
 
 ## ✅ Status
 
