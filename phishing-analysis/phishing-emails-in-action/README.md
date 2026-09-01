@@ -81,7 +81,7 @@ suspicious emails more effectively.
 
 ## 📸 Room Completion
 
-The room was completed successfully.
+![Phishing Emails in Action](phishing-emails-in-action.png)
 
 ## ✅ Status
 
