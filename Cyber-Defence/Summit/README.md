@@ -10,6 +10,12 @@ As a SOC Analyst, understanding attacker behaviour and knowing how to translate 
 
 ---
 
+## 🖼️ Summit
+
+![Summit](./summit.png)
+
+---
+
 ## 🎯 Objectives
 
 The objectives of this room were to:
