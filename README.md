@@ -1,4 +1,3 @@
-
 # TryHackMe Write-ups
 
 Welcome to my TryHackMe learning repository.
@@ -20,7 +19,7 @@ This repository documents my hands-on cybersecurity learning journey through Try
 - [x] [Offensive Security Intro](https://github.com/CyberTife/tryhackme-writeups/tree/main/Pre-Security/Offensive-Security-Intro)
 - [x] [Defensive Security Intro](https://github.com/CyberTife/tryhackme-writeups/tree/main/Pre-Security/Defensive-Security-Intro)
 - [x] [Search Skills](https://github.com/CyberTife/tryhackme-writeups/tree/main/Pre-Security/Search-Skills)
-      
+
 ### Wireshark & Network Analysis
 
 - [x] [Network Traffic Basics](https://github.com/CyberTife/tryhackme-writeups/tree/main/Wireshark/Network-Traffic-Basics)
@@ -29,53 +28,61 @@ This repository documents my hands-on cybersecurity learning journey through Try
 - [x] [Wireshark: Traffic Analysis](https://github.com/CyberTife/tryhackme-writeups/tree/main/Wireshark/Network-Traffic-Analysis)
 - [x] [NetworkMiner](https://github.com/CyberTife/tryhackme-writeups/tree/main/Wireshark/NetworkMiner)
 
+### SOC Level 1
+
+#### Network Security Monitoring
+
+- [x] [Network Security Essentials](https://github.com/CyberTife/tryhackme-writeups/tree/main/SOC-Level-1/Network-Security-Monitoring/01-Network-Security-Essentials)
+- [x] [Network Discovery Detection](https://github.com/CyberTife/tryhackme-writeups/tree/main/SOC-Level-1/Network-Security-Monitoring/02-Network-Discovery-Detection)
+- [x] [IDS Fundamentals](https://github.com/CyberTife/tryhackme-writeups/tree/main/SOC-Level-1/Network-Security-Monitoring/03-IDS-Fundamentals)
+- [x] [Snort](https://github.com/CyberTife/tryhackme-writeups/tree/main/SOC-Level-1/Network-Security-Monitoring/04-Snort)
+- [x] [Man-in-the-Middle Detection](https://github.com/CyberTife/tryhackme-writeups/tree/main/SOC-Level-1/Network-Security-Monitoring/05-Man-in-the-Middle-Detection)
+- [x] [Data Exfiltration Detection](https://github.com/CyberTife/tryhackme-writeups/tree/main/SOC-Level-1/Network-Security-Monitoring/06-Data-Exfiltration-Detection)
+
 ### Linux Fundamentals
+
 - [ ] Coming Soon
 
 ### Windows Fundamentals
-- [ ] Coming Soon
 
-### SOC Level 1
 - [ ] Coming Soon
 
 ### Cyber Defence
+
 - [ ] Coming Soon
 
 ---
 
-## 📁 Repository Structure
+## 🛠️ Skills I'm Building
 
-```text
-tryhackme-writeups
-│
-├── Pre-Security
-├── Wireshark
-│   ├── Network-Traffic-Basics
-│   ├── Wireshark-The-Basics
-│   ├── Wireshark-Packet-Operations
-│   ├── Network-Traffic-Analysis
-│   └── NetworkMiner
-├── Linux-Fundamentals
-├── Windows-Fundamentals
-├── SOC-Level-1
-└── Cyber-Defence
-```
+- Networking
+- Network Security Monitoring
+- SIEM
+- Log Analysis
+- Incident Response
+- Threat Detection
+- Detection Engineering
+- Threat Intelligence
+- Wireshark
+- Network Traffic Analysis
+- Packet Analysis
+- Network Forensics
+- Snort
 
 ---
-🛠️ Skills I'm Building
-Linux
-Networking
-Web Security
-Threat Intelligence
-SIEM
-Log Analysis
-Incident Response
-OSINT
-Vulnerability Assessment
-Wireshark
-Network Traffic Analysis
-Packet Analysis
-Network Forensics
+
+## 📁 SOC Level 1 Structure
+
+```text
+SOC-Level-1/
+└── Network-Security-Monitoring/
+    ├── 01-Network-Security-Essentials/
+    ├── 02-Network-Discovery-Detection/
+    ├── 03-IDS-Fundamentals/
+    ├── 04-Snort/
+    ├── 05-Man-in-the-Middle-Detection/
+    └── 06-Data-Exfiltration-Detection/
+```
 
 ---
 
